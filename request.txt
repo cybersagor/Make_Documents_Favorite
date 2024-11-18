@@ -1,0 +1,23 @@
+POST /snapi/v2/documents/d73ce4baec5e42b390b93daa363296da822fa093/favorites HTTP/2
+Host: app.signnow.com
+Cookie: chat-app-com-type=2; _gd1731427687187=_gd1731427687187; _gd1731427740355=_gd1731427740355; _gcl_au=1.1.1558056190.1731428679; 
+Content-Length: 0
+Sec-Ch-Ua-Platform: "Linux"
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlCZWFyZXJUb2tlbiI2ZWQwOThkNDNlZWUzYzgyYjk3OGZlYjBiNjE3NTJmNjU3MjY2YzA0MTFjYzdmODQ5Yjc1ZTRkOGUzYjBlOTEwNTY3MDU3ZTQ1MmI2MzVhZjUwYTRkMTE4ODdkZDczOjA1NDgxOTRjZGM1YWVlZDkyZjA5ZGNhNGE3NzM0MWYyIiwidXNlck5hbWUiOiJjMjE3ZDcyNWNmODQ0ZjE0YTdlMGZiNmEwNjU5ODkxZmFhZWNiYjg5OjBjNzI2NTJlZWM0NGFhMDljNDk1ODRlNjljYzQ4ZDRmIiwidXNlcklkIjoiYmM2MWM3ZDg2MWY5NDE1YWI3MmQzMTkzOGIzODNjMWM1OGJjYmYxNCIsImlzUGFpZCI6ZmFsc2UsIm9yaWdpbmFsX2lhdCI6MTczMTkxNzg3NzIyNSwiaXNBaXJTbGF0ZSI6dHJ1ZSwiaXNTU08iOmZhbHNlLCJjb21tb25FeHAiOnRydWUsIm9yZ0lkIjoiYzlkOGI3NzNhMWIxNTZiYTk4MGMwMTVhZWMwNDk4MmM3NDQ1NGYyNjdlODgyNTNkOWQ1ZDE1OTgxMzBiYTNlZmU5NzQ0ZDM4NDI0MzUwNWI6YWMwNGRkOWNjZTMxOGU0N2U5ZmRjMzVkNDQ4ZWJmZmUiLCJpYXQiOjE3MzE5MTc4NzcsImV4cCI6MTczMjAwNDI3N30.634jBkKrJensqOaThT3f8goruGS2qZKUm8PtQgzROOc
+X-Csrf-Token: 1e07908e7983b5499ed87a711ab2982f859b05dca4cf8ea60128a5151a702236
+X-New-Api: some
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: https://app.signnow.com
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://app.signnow.com/webapp/documents/f90c3a8b2b5743ef8d7bfccd9508c13ea066583b
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9,fr;q=0.8
+X-Bug-Bounty: HackerOne-bughuntar
+X-Hackerone-Research: bughuntar
+Priority: u=1, i
+
